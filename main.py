@@ -227,3 +227,13 @@ with tab4:
         chart = chart.facet(column='year:N')
     
     st.altair_chart(chart)
+
+# add instructions and info in sidebar
+with st.sidebar.expander("How to Use"):
+    st.write("""
+    1. Use global filters to adjust dataset
+    2. Explore different tabs for various analyses
+    3. Customize visualizations in the Custom Analysis tab
+    """)
+
+st.sidebar.info("Explore musical trends between 1969 and 2019!")
